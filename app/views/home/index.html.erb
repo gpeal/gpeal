@@ -4,8 +4,15 @@
 		<h1><%= link_to post.title, post %></h1>
 
 		<p>
-			<%= shorten(post.content, 400) %>
+			<%= post.content %>
 		</p>
 
+	</div>
+
+	<div class="comment-box">
+		<label>Comments</label>
+		<% post.post_comments.each do |comment| %>
+			<label><%= comment.author %>: <%= commet.content %></label>
+		<% end %>
 	</div>
 <% end %>

@@ -1,10 +1,10 @@
 $link-color:  #646464;
 $link-color-hover: #969696;
 
-.header h1 a {text-decoration: none;}
-.header h1 a {&:link 	{color: $link-color;}}
-.header h1 a {&:visited {color: $link-color;}}
-.header h1 a {&:hover	{color: $link-color-hover;}}
+header h1 a {text-decoration: none !important;}
+header h1 a {&:link 	{color: $link-color;}}
+header h1 a {&:visited {color: $link-color;}}
+header h1 a {&:hover	{color: $link-color-hover;}}
 
 body 	{ margin-left: auto; margin-right: auto; margin-top: 46px; width: 940px; background-color: #E6EBEA; }
 body hr { border-bottom-color: #C8C8C8; border-bottom-width: 4px; border-radius: 4px;}
