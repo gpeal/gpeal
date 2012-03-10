@@ -25,6 +25,8 @@ gem 'jquery-rails'
 gem "activeadmin", :git => "git://github.com/gregbell/active_admin.git"
 gem "meta_search",    '>= 1.1.0.pre'
 
+gem 'twitter-bootstrap-rails'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -32,7 +34,8 @@ gem "meta_search",    '>= 1.1.0.pre'
 # gem 'jbuilder'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+#gem 'unicorn'
+gem 'thin'
 
 # Deploy with Capistrano
 # gem 'capistrano'

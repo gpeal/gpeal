@@ -1,0 +1,11 @@
+<% @posts.each do |post| %>
+	<div class="post-box">
+
+		<h1><%= link_to post.title, post, :class => "post-title" %></h1>
+
+		<p class="post-content-preview">
+			<%= post.content %>
+		</p>
+
+	</div>
+<% end %>

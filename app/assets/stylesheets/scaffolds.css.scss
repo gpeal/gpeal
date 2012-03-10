@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #e6ebea;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -16,12 +16,11 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000;
+  color: #c8c8c8;
   &:visited {
     color: #666; }
   &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: #969696; } }
 
 div {
   &.field, &.actions {
