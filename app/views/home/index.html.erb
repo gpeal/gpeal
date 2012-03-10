@@ -1,10 +1,10 @@
 <% @posts.each do |post| %>
 	<div class="post-box">
 
-		<h1><%= link_to post.title, post, :class => "post-title" %></h1>
+		<h1><%= link_to post.title, post %></h1>
 
-		<p class="post-content-preview">
-			<%= post.content %>
+		<p>
+			<%= shorten(post.content, 400) %>
 		</p>
 
 	</div>
