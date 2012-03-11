@@ -23,7 +23,7 @@
 			    </div>
 			<% end %>
 			<label id="comments-title-<%= post.id %>">Comments</label>
-			<% post.post_comments.each do |comment| %>
+			<% for comment in post.post_comments.find(:all, :order => :"created_at DESC") %>
 				<div class="comment">
 					<label><%= comment.author %>: <%= comment.content %></label>
 				</div>

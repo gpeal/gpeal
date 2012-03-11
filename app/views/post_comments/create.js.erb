@@ -1,1 +1,1 @@
-$("<label><%= @post_comment.author %>: <%= @post_comment.content %></label>").insertAfter("#comments-title-<%= @post_comment.post_id %>");
+$("<div class=\"comment\"><label><%= @post_comment.author %>: <%= @post_comment.content %></label></div>").insertAfter("#comments-title-<%= @post_comment.post_id %>");
