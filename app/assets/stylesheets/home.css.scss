@@ -5,7 +5,7 @@
 
 body.home {
 
-	.post-box 			{background-color: #C8C8C8; border-radius: 15px;}
+	.post-box 			{background-color: #C8C8C8; border-radius: 15px; overflow: hidden;}
 	.post-box h1 		{padding-top: 10px; padding-left: 20px;}
 	.post-box h1 a		{text-decoration: none !important;}
 	.post-box h1 a 		{&:link 	{color: $link-color;}}
@@ -13,6 +13,6 @@ body.home {
 	.post-box h1 a 		{&:hover	{color: $link-color-hover;}}
 	.post-box p			{padding-left: 20px; padding-right: 20px; padding-bottom: 10px;}
 
-	.comment-box		{background-color: #c0c0c0; border-radius: 15px;}
+	.comment-box		{background-color: #e0e0e0; border-radius: 15px; margin-left: 45px; margin-right: 45px}
 
 }

@@ -9,10 +9,22 @@
 
 	</div>
 
-	<div class="comment-box">
-		<label>Comments</label>
+	<div class="comment-box comment-box-<%= post.id %>">
+		<%= form_for(@post_comment, :remote => true, :class => 'comment-submit-form') do |f| %>
+			<%= f.hidden_field :post_id, :value => post.id %>
+			<div class="control-group">
+				<%= f.text_field :author, :placeholder => "Name" %>
+			</div>
+			<div class="control-group">
+				<%= f.text_field :content, :placeholder => "Comment" %>
+			</div>
+			<div class="controls">
+		      <%= f.submit value="Submit", :class => "btn btn-small" %>
+		    </div>
+		<% end %>
+		<label id="comments-title-<%= post.id %>">Comments</label>
 		<% post.post_comments.each do |comment| %>
-			<label><%= comment.author %>: <%= commet.content %></label>
+			<label><%= comment.author %>: <%= comment.content %></label>
 		<% end %>
 	</div>
 <% end %>

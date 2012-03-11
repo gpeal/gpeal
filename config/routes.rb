@@ -6,6 +6,8 @@ Gpeal::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => 'home#index'
+  match '/' => 'post_comment#list', :via => :post
+  resources :post_comments
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
