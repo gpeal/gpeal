@@ -4,7 +4,7 @@ body 			  { background-image: url("furley_bg.png")}
 h1 				  { color: $theme-color-a; }
 .sidebar-li		  { list-style-type: none; padding-bottom: 45px; }
 
-#sidebar 		  { position: fixed; }
+#sidebar 		  { position: fixed; border-right: 3px solid $theme-color-b; height: 100%; }
 #sidebar-content  { margin: 0px auto; text-align: center; padding-top: 50px; }
 #sidebar-divider  { margin: 28px 10px 38px 10px; border-radius: 3px; border-width: 3px; border-color: $theme-color-b; }
 

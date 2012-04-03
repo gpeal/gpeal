@@ -2,3 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
+
+#header 	      { margin-left: 310px; border-bottom: 3px solid $theme-color-b; height: 75px; padding-left: 17px; }
+#header-quote	  { font-style: italic; margin-top: 31px; }
