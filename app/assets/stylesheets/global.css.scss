@@ -1,13 +1,18 @@
-$link-color:  #646464;
-$link-color-hover: #969696;
+@import "variables";
 
-header h1 a {text-decoration: none !important;}
-header h1 a {&:link 	{color: $link-color;}}
-header h1 a {&:visited {color: $link-color;}}
-header h1 a {&:hover	{color: $link-color-hover;}}
+body 			  { background-image: url("furley_bg.png")}
+h1 				  { color: $theme-color-a; }
+.sidebar-li		  { list-style-type: none; padding-bottom: 45px; }
 
-body 	{ margin-left: auto; margin-right: auto; margin-top: 46px; width: 940px; background-color: #E6EBEA; }
-body hr { border-bottom-color: #C8C8C8; border-bottom-width: 4px; border-radius: 4px;}
+#sidebar 		  { position: fixed; }
+#sidebar-content  { margin: 0px auto; text-align: center; padding-top: 50px; }
+#sidebar-divider  { margin: 28px 10px 38px 10px; border-radius: 3px; border-width: 3px; border-color: $theme-color-b; }
 
-form label {float: left}
+a.sidebar_button   { border-radius: 30px; border: 3px solid $theme-color-a; padding: 7px 15px 7px 15px; text-decoration: none; color: $theme-color-e;
+					 margin: 15px 0px 15px 0px; font-size: 18px;
+		  &:visited { text-decoration: none; border-color: $theme-color-a; color: $theme-color-e;}
+		  &:hover   { text-decoration: none; border-color: $theme-color-b; color: $theme-color-a; border-width: 6px; }}
 
+
+
+body { float: left; }

@@ -8,13 +8,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="<%= controller.controller_name %>">
-	<header>
-		<%= render 'layouts/header' %>
-	</header>
-	<%= yield %>
-	<footer>
-		<%= render 'layouts/footer' %>
-	</footer>
+	<div class="container_12">
+		<div id="sidebar" class="grid_4">
+			<%= render 'layouts/sidebar' %>
+		</div>
+		<div id="content" class="grid_7 prefix_4">
+			<%= yield %>
+		</div>
+		<footer>
+			<%= render 'layouts/footer' %>
+		</footer>
+	</div>
 </body>
 
 </html>

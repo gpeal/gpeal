@@ -1,19 +1,4 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "global";
-
-body.home {
-
-	.post-box 			{background-color: #C8C8C8; border-radius: 15px; overflow: hidden;}
-	.post-box h1 		{padding-top: 10px; padding-left: 20px;}
-	.post-box h1 a		{text-decoration: none !important;}
-	.post-box h1 a 		{&:link 	{color: $link-color;}}
-	.post-box h1 a 		{&:visited {color: $link-color;}}
-	.post-box h1 a 		{&:hover	{color: $link-color-hover;}}
-	.post-box p			{padding-left: 20px; padding-right: 20px; padding-bottom: 10px;}
-
-	.comment-box				{background-color: #e0e0e0; border-radius: 0px 0px 15px 15px; margin-left: 45px; margin-right: 45px; margin-bottom: 17px; padding: 15px 10px 10px 15px;}
-	.comment-box .comment		{background-color: #afafaf; border-radius: 15px; margin-bottom: 10px; padding-left: 9px;}
-
-}
+@import "variables";
