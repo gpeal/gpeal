@@ -13,6 +13,8 @@ a.sidebar_button   { border-radius: 30px; border: 3px solid $theme-color-a; padd
 		  &:visited { text-decoration: none; border-color: $theme-color-a; color: $theme-color-e;}
 		  &:hover   { text-decoration: none; border-color: $theme-color-b; color: $theme-color-a; border-width: 6px; }}
 
+.horizontal-divider { height: 3px; background-color: $theme-color-b; margin-left: 310px; }
+
 
 
 body { float: left; }

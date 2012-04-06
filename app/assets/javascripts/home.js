@@ -1,11 +1,18 @@
 $(document).ready(function() {
 	resizeHeaderContentSeperator();
+	resizeContent();
 });
 
 $(window).resize(function() {
 	resizeHeaderContentSeperator();
+	resizeContent();
 });
 
 var resizeHeaderContentSeperator = function() {
-	$("#content-pane").width(window.innerWidth);
+	$(".horizontal-divider").width(window.innerWidth - 335);
+}
+
+var resizeContent = function() {
+	$("#content").css("width", (window.innerWidth-335)*0.5);
+	$("#header-quote").css("width", (window.innerWidth-335)*0.9);
 }
