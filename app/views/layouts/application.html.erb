@@ -12,15 +12,16 @@
 		<div id="sidebar" class="grid_4">
 			<%= render 'layouts/sidebar' %>
 		</div>
-		<div id="header">
-			<%= render 'layouts/header' %>
-		</div>
+		<div id="content-pane">
+			<div id="header">
+				<%= render 'layouts/header' %>
+			</div>
 
-		<div class="clear"></div>
-		<div id="content" class="grid_7 prefix_4">
-			<%= yield %>
+			<div class="clear"></div>
+			<div id="content">
+				<%= yield %>
+			</div>
 		</div>
-
 		<footer>
 			<%= render 'layouts/footer' %>
 		</footer>

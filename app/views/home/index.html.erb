@@ -1,32 +1,13 @@
 <% @posts.each do |post| %>
 	<div class="post-box">
 
-		<h1><%= link_to post.title, post %></h1>
+		<div class="post-title">
+			<%= post.title %>
+		</div>
 
 		<p>
 			<%= post.content %>
 		</p>
-
-	</div>
-
-	<div class="comment-box comment-box-<%= post.id %>">
-			<%= form_for(@post_comment, :remote => true, :class => 'comment-submit-form') do |f| %>
-				<%= f.hidden_field :post_id, :value => post.id %>
-				<div class="control-group">
-					<%= f.text_field :author, :placeholder => "Name" %>
-				</div>
-				<div class="control-group">
-					<%= f.text_field :content, :placeholder => "Comment" %>
-				</div>
-				<div class="controls">
-			      <%= f.submit value="Submit", :class => "btn btn-small" %>
-			    </div>
-			<% end %>
-			<label id="comments-title-<%= post.id %>">Comments</label>
-			<% for comment in post.post_comments.find(:all, :order => :"created_at DESC") %>
-				<div class="comment">
-					<label><%= comment.author %>: <%= comment.content %></label>
-				</div>
-			<% end %>
+		<div class="post-divider"></div>
 	</div>
 <% end %>

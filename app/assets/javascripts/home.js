@@ -7,5 +7,5 @@ $(window).resize(function() {
 });
 
 var resizeHeaderContentSeperator = function() {
-	$("#header").width(window.innerWidth-350);
+	$("#content-pane").width(window.innerWidth);
 }
